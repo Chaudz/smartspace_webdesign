@@ -60,6 +60,10 @@ li {
   src: url(../font/Manrope-Regular.woff);
   font-style: normal;
 }
+.test {
+  display: flex;
+}
+
 .header-container {
   position: relative;
   max-width: 1440px;
@@ -152,13 +156,25 @@ li {
   color: #545a58;
 }
 .header-content__box--search {
+  border: 1px solid #dadada;
   margin-top: 48px;
-}
-.header-content__box--search {
-  width: 756p x;
   max-width: 756px;
-  position: relative;
-  z-index: 300;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-content__input--wrapper {
+  padding-left: 33px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  flex: 1;
+}
+.header-content__input--wrapper input {
+  padding-right: 10px;
+  border: none;
+  flex: 1;
+  opacity: 0.3;
 }
 .header-content__title--logo {
   margin-top: 145px;
@@ -169,38 +185,6 @@ li {
   letter-spacing: 0.01rem;
   color: #545a58;
 }
-.header-btn__search--orange {
-  position: absolute;
-  right: 0;
-}
-.header-input--text {
-  width: 100%;
-  height: 86px;
-  padding-top: 30px;
-  padding-bottom: 29px;
-  padding-left: 74px;
-  border: 1px solid #dadada;
-  font-family: "manrope", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 27.32px;
-  letter-spacing: 0.01rem;
-  color: #545a58;
-  opacity: 0.3;
-  box-shadow: 1px 2px 3px #000000;
-}
-.header-btn__search--orange {
-  border: none;
-  height: 100%;
-  width: 188px;
-  background-color: #f85a47;
-  font-family: "manrope", sans-serif;
-  font-weight: 700;
-  font-size: 1.0652rem;
-  line-height: 23.22px;
-  letter-spacing: 1%;
-  color: #ffffff;
-}
 .header-img {
   position: absolute;
   right: 0;
@@ -208,7 +192,7 @@ li {
   max-width: 603px;
   width: 100%;
   height: 573px;
-  z-index: 200;
+  z-index: -10;
   object-fit: cover;
 }
 .header__search--icon {
@@ -222,6 +206,17 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 3.125rem;
+}
+.header-btn__search--orange {
+  border: none;
+  padding: 32px 42px;
+  font-family: "manrope", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  background-color: #f85a47;
+  color: #ffffff;
 }
 
 .work {

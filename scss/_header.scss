@@ -1,3 +1,6 @@
+.test {
+  display: flex;
+}
 .header {
   &-container {
     position: relative;
@@ -90,13 +93,25 @@
       color: $darkGray;
     }
     &__box--search {
+      border: 1px solid $lightGray;
       margin-top: 48px;
-    }
-    &__box--search {
-      width: 756p x;
       max-width: 756px;
-      position: relative;
-      z-index: 300;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__input--wrapper {
+      padding-left: 33px;
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      flex: 1;
+      & input {
+        padding-right: 10px;
+        border: none;
+        flex: 1;
+        opacity: 0.3;
+      }
     }
     &__title--logo {
       margin-top: 145px;
@@ -108,38 +123,7 @@
       color: $darkGray;
     }
   }
-  &-btn__search--orange {
-    position: absolute;
-    right: 0;
-  }
-  &-input--text {
-    width: 100%;
-    height: 86px;
-    padding-top: 30px;
-    padding-bottom: 29px;
-    padding-left: 74px;
-    border: 1px solid $lightGray;
-    font-family: $fontManrope;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 27.32px;
-    letter-spacing: 0.01rem;
-    color: $darkGray;
-    opacity: 0.3;
-    box-shadow: 1px 2px 3px $black;
-  }
-  &-btn__search--orange {
-    border: none;
-    height: 100%;
-    width: 188px;
-    background-color: $orange;
-    font-family: $fontManrope;
-    font-weight: 700;
-    font-size: 1.0652rem;
-    line-height: 23.22px;
-    letter-spacing: 1%;
-    color: $white;
-  }
+
   &-img {
     position: absolute;
     right: 0;
@@ -147,7 +131,7 @@
     max-width: 603px;
     width: 100%;
     height: 573px;
-    z-index: 200;
+    z-index: -10;
     object-fit: cover;
   }
   &__search--icon {
@@ -161,5 +145,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3.125rem;
+  }
+  &-btn__search--orange {
+    border: none;
+    padding: 32px 42px;
+    font-family: $fontManrope;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    background-color: $orange;
+    color: $white;
   }
 }

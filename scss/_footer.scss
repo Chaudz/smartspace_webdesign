@@ -1,0 +1,115 @@
+.footer {
+  max-width: 1440px;
+  margin-top: 210px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: $lightSnow;
+  &__input--wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    max-width: 688px;
+    width: 100%;
+    padding: 26px 30px 26px 45px;
+    background-color: $white;
+    box-shadow: 1px 2px 3px $black;
+    & input {
+      margin-top: 11px;
+      border: none;
+      font-family: $fontManrope;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 144.2%;
+      letter-spacing: 0.02em;
+    }
+    & label {
+      font-family: $fontManrope;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 144.2%;
+      letter-spacing: 0.02em;
+      color: $black;
+      opacity: 0.2;
+    }
+  }
+  &-title {
+    font-family: $fontManrope;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 144.2%;
+    letter-spacing: 0.02em;
+    color: $black;
+  }
+  &-desc {
+    margin-top: 11px;
+    font-family: $fontManrope;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 144.2%;
+    letter-spacing: 0.02em;
+    color: $black;
+  }
+  &__btn--send {
+    border: none;
+    max-width: 167px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144.2%;
+    letter-spacing: 0.02em;
+    color: $white;
+    background-color: $orange;
+  }
+  &-menu--wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 160px;
+    border-top: 1px solid $lightGray;
+    max-width: 889px;
+    width: 100%;
+  }
+  &-menu--logo {
+    font-family: $fontManrope;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 31px;
+    color: $black;
+  }
+  &-menu {
+    display: flex;
+    gap: 46px;
+    & a {
+      position: relative;
+      color: $black;
+      font-family: $fontDmSans;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17px;
+    }
+    & a > span {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: $purple;
+    }
+    & a:hover > span {
+      display: block;
+      width: 100%;
+      animation: stretch 0.4s linear forwards;
+    }
+  }
+  &__coppy-right {
+    margin-top: 69px;
+    font-family: $fontDmSans;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

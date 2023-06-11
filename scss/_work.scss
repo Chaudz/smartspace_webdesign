@@ -1,0 +1,60 @@
+.work {
+  margin-top: 14rem;
+  padding: 0 10.625rem;
+  &-title {
+    text-align: center;
+    font-family: $fontManrope;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 55px;
+    color: $black;
+  }
+  &-cards {
+    margin-top: 4.35rem;
+    display: flex;
+    gap: 10rem;
+  }
+  &-card {
+    max-width: 16.25rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  &-card:nth-child(1) &-card__btn--icon {
+    background-color: $purple;
+  }
+  &-card:nth-child(2) &-card__btn--icon {
+    background-color: $cyan;
+  }
+  &-card:nth-child(3) &-card__btn--icon {
+    background-color: $lavender;
+  }
+  &-card__btn--icon {
+    font-size: 1.5625rem;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.625rem;
+    width: 5.625rem;
+    border-radius: 1.25rem;
+    background-color: $purple;
+  }
+  &-card--title {
+    margin-top: 3.125rem;
+    font-family: $fontManrope;
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: $black;
+  }
+  &-card--desc {
+    margin-top: 0.9375rem;
+    font-family: $fontRoboto;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+  }
+}

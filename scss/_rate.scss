@@ -1,0 +1,96 @@
+// rate
+.rate {
+  &__wrapper {
+    max-width: 1440px;
+    margin-top: 196px;
+    padding-left: 136px;
+    padding-right: 104px;
+    background-color: $white;
+  }
+  &--title {
+    max-width: 570px;
+    font-family: $fontManrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    color: $black;
+  }
+  &__cards--wrapper {
+    margin-top: 51px;
+    display: flex;
+    gap: 30px;
+  }
+  &-card {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-left: 38px;
+    border: 1px solid $lightGray;
+    border-radius: 10px;
+    &--stars {
+      display: flex;
+      gap: 2px;
+    }
+    &--desc {
+      margin-top: 33px;
+      max-width: 270px;
+      font-family: $fontManrope;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    &__author--wrapper {
+      margin-top: 53px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    &__author--info {
+      display: flex;
+      flex-flow: column;
+    }
+    &__author--name {
+      font-family: $fontManrope;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: $black;
+    }
+    &__author--address {
+      font-family: $fontManrope;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: $darkGray;
+    }
+  }
+  &__logos--contact {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    gap: 6.25rem;
+  }
+  &__logos--wrapper {
+    max-height: 27px;
+    max-width: 672px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &--contact {
+    max-width: 311px;
+    font-family: $fontRoboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+    & > a {
+      color: $lightBlue;
+      text-decoration: underline;
+    }
+  }
+}

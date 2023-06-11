@@ -1,0 +1,108 @@
+.estate {
+  &__wrapper {
+    margin-top: 16rem;
+    max-width: 1440px;
+    padding: 0 8.4375rem;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      display: flex;
+      flex-flow: column;
+    }
+    &--title {
+      font-family: $fontManrope;
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 3.4375rem;
+      color: $black;
+    }
+    &--desc {
+      margin-top: 0.9375rem;
+      max-width: 29.375rem;
+      font-family: $fontManrope;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $black;
+    }
+  }
+  &__btn--orange {
+    border: none;
+    border-radius: 5px;
+    width: 12.5rem;
+    height: 4.0625rem;
+    background-color: $orange;
+  }
+  &__categories--name {
+    margin-top: 3.125rem;
+    display: flex;
+    gap: 3.375rem;
+  }
+  &__category--name {
+    position: relative;
+    font-family: $fontManrope;
+    font-weight: 400;
+    font-size: 1.1875rem;
+    line-height: 1.635rem;
+    color: $black;
+  }
+  &__category--name span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $orange;
+    transition: width 0.1s ease;
+  }
+  &__category--name:hover > span {
+    width: 100%;
+    animation: stretch 0.4s linear forwards;
+  }
+  &__img-wrapper {
+    position: relative;
+    & .img__btn-wrapper {
+      position: absolute;
+      top: 0.875rem;
+      left: 0.875rem;
+      display: flex;
+      gap: 6px;
+    }
+    & .btn-img--feature {
+      border: 1px solid $white;
+      border-radius: 5px;
+      width: 4.6875rem;
+      height: 1.625rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-family: initial, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-align: center;
+      color: $white;
+    }
+    & .btn-img--3d {
+      border: 1px solid $white;
+      border-radius: 5px;
+      width: 1.75rem;
+      height: 1.625rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-family: initial, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 0.9375rem;
+      text-align: center;
+      color: $white;
+    }
+  }
+  &__imgs {
+    margin-top: 3.5625rem;
+    display: flex;
+    gap: 1.875rem;
+  }
+  &-img {
+    object-fit: cover;
+  }
+}

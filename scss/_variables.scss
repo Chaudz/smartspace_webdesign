@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "dmsans";
+  src: url(../font/DMSans-Bold.woff);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  src: url(../font/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: "manrope";
+  src: url(../font/Manrope-Regular.woff);
+  font-style: normal;
+}
+
+$fontDmSans: "dmsans", sans-serif;
+$fontRoboto: "roboto", sans-serif;
+$fontManrope: "manrope", sans-serif;
+$orange: #f85a47;
+$lightBlue: #bdccff;
+$white: #ffffff;
+$black: #000000;
+$darkGray: #31353b;
+$lightGray: #dadada;
+$purple: #9672ff;
+$cyan: #4ddffd;
+$lightCyan: #f1ffff;
+$lavender: #f2b8ec;
+$darkGray: #545a58;
+$lightBlue: #2cbde7;
+$lightSnow: #fbfcfc;
